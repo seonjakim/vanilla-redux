@@ -1,7 +1,7 @@
 import {
   observable,
   observe,
-} from './subscribe.js';
+} from './src/core/subscribe.js';
 
 const state = observable({ a: 10, b: 20 });
 observe(() => console.log(`a = ${state.a}`));
